@@ -1,0 +1,67 @@
+{
+  "1": {
+    "1": {
+      "title": "New Years Day"
+    },
+    "2": {
+      "title": "New Years Day Holiday"
+    },
+    "16": {
+      "title": "Martin Luther King Day"
+    }
+  },
+  "2": {
+    "20": {
+      "title": "Presidents' Day"
+    }
+  },
+  "4": {
+    "17": {
+      "title": "Emancipation Day"
+    }
+  },
+  "5": {
+    "14": {
+      "title": "Mother's Day"
+    },
+    "29": {
+      "title": "Memorial Day"
+    }
+  },
+  "6": {
+    "18": {
+      "title": "Father's Day"
+    }
+  },
+  "7": {
+    "4": {
+      "title": "Independence Day"
+    }
+  },
+  "9": {
+    "4": {
+      "title": "Labor Day"
+    }
+  },
+  "10": {
+    "9": {
+      "title": "Columbus Day"
+    }
+  },
+  "11": {
+    "10": {
+      "title": "Veterans Day"
+    },
+    "23": {
+      "title": "Thanksgiving Day"
+    },
+    "24": {
+      "title": "Day after Thanksgiving"
+    }
+  },
+  "12": {
+    "25": {
+      "title": "Christmas Day"
+    }
+  }
+}
