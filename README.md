@@ -11,11 +11,11 @@ $ npm install --save holiday
 ```
 
 ## Usage
-```bash
+```js
 import holiday from 'holiday'
 
 holiday(1, 1, 'us').then(res => console.log(`Today is ${res}`))
-// => Todays is New Years Day
+// => Today is New Years Day
 ```
 
 ## API
