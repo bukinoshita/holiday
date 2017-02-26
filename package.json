@@ -1,6 +1,6 @@
 {
   "name": "holiday",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "List of Federal Public Holidays in 2017",
   "main": "index.js",
   "repository": {
