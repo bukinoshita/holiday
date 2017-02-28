@@ -23,15 +23,15 @@ holiday(1, 1, 'us').then(res => console.log(`Today is ${res}`))
 
 #### month
 Type: Number<br/>
-Required
+Optional
 
-month should be a number between 1-12
+month should be a number between 1-12. If month and day is not passed, it returns every holiday in the year.
 
 #### day
 Type: Number<br/>
-Required
+Optional
 
-day should be a number between 1-31
+day should be a number between 1-31. If day is not passed, it returns every holiday in the month.
 
 #### country
 Type: String<br/>
