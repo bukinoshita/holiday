@@ -20,8 +20,25 @@ const holiday = (month, day, country = 'us') => {
       }
 
       reject(false)
+    } else if (!month && !day) {
+      if (holidays[country]) {
+        resolve(traverseObj(holidays[country], []))
+      }
+      reject(false)
     }
   })
+}
+
+// recursive function to traverse the holidays object and get all the names
+function traverseObj(obj, array) {
+  for (const prop in obj) {
+    if (typeof obj[prop] === 'object') {
+      traverseObj(obj[prop], array)
+    } else {
+      array.push(obj[prop])
+    }
+  }
+  return array
 }
 
 module.exports = holiday
