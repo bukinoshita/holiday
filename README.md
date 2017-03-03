@@ -2,6 +2,7 @@
 > List of Federal Public Holidays in 2017
 
 [![Codeship Status for bukinoshita/holiday](https://app.codeship.com/projects/f81b98e0-dde4-0134-65d6-666b8ac96438/status?branch=master)](https://app.codeship.com/projects/204623)
+[![Build Status](https://travis-ci.org/bukinoshita/holiday.svg?branch=master)](https://travis-ci.org/bukinoshita/holiday)
 [![GitHub release](https://img.shields.io/github/release/bukinoshita/holiday.svg)](https://www.npmjs.com/package/holiday)
 [![license](https://img.shields.io/github/license/bukinoshita/holiday.svg)](https://raw.githubusercontent.com/bukinoshita/holiday/master/LICENSE)
 
