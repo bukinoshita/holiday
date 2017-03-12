@@ -17,7 +17,7 @@ import holiday from 'holiday'
 
 const opts = { month: 1, day: 1, country: 'us' }
 
-holiday(opts).then(res => console.log(`Today is ${res}`))
+holiday(opts).then(res => console.log(`Today is ${res.title}`))
 // => Today is New Years Day
 ```
 
