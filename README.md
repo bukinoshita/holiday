@@ -15,30 +15,35 @@ $ npm install --save holiday
 ```js
 import holiday from 'holiday'
 
-holiday(1, 1, 'us').then(res => console.log(`Today is ${res}`))
+const opts = { month: 1, day: 1, country: 'us' }
+
+holiday(opts).then(res => console.log(`Today is ${res}`))
 // => Today is New Years Day
 ```
 
 ## API
-### holiday(month, day, country)
+### holiday(options)
 
-#### month
-Type: Number<br/>
+#### options
+Type: `Object`<br/>
 Optional
 
-month should be a number between 1-12. If month and day is not passed, it returns every holiday in the year.
+If `options` is not passed, returns US holidays for the entire year
 
-#### day
-Type: Number<br/>
-Optional
+##### month
+Type: `string`<br/>
 
-day should be a number between 1-31. If day is not passed, it returns every holiday in the month.
+Must be a number between 1-12
 
-#### country
-Type: String<br/>
-Options: 'us' and 'br'<br/>
-Default: 'us'<br/>
-Optional
+##### day
+Type: `string`<br/>
+
+Must be a number between 1-31
+
+##### country
+Type: `string`<br/>
+Options: `us` (United States) or `br` (Brazil)<br/>
+Default: `us`
 
 ## Related
 - [is-holiday](https://github.com/bukinoshita/is-holiday) — Get todays Federal Public Holidays
