@@ -2,9 +2,9 @@
 
 const holidays = require('./holidays/')
 
-const holiday = obj => {
+const holiday = (opts = {}) => {
   const date = new Date()
-  const {year = date.getFullYear(), month, day, country = 'us'} = obj
+  const {year = date.getFullYear(), month, day, country = 'us'} = opts
 
   return new Promise((resolve, reject) => {
     if (!holidays[year]) {
@@ -16,7 +16,7 @@ const holiday = obj => {
     }
 
     if (!month && !day) {
-      resolve(traverseObj(holidays[year][country], []))
+      resolve(holidays[year][country])
     }
 
     if (month && day) {
@@ -33,18 +33,6 @@ const holiday = obj => {
       reject(false)
     }
   })
-}
-
-// recursive function to traverse the holidays object and get all the names
-function traverseObj(obj, array) {
-  for (const prop in obj) {
-    if (typeof obj[prop] === 'object') {
-      traverseObj(obj[prop], array)
-    } else {
-      array.push(obj[prop])
-    }
-  }
-  return array
 }
 
 module.exports = holiday

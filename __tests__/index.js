@@ -36,11 +36,17 @@ test('should return a br holiday', async t => {
 test('should return a list of holidays for the year when month and day is undefined', async t => {
   const res = await holiday({country: 'us'}).then(res => res)
 
-  t.true(res.length > 15)
+  t.true(res['1']['1'].title === 'New Years Day')
 })
 
 test('should not return holidays for year 2099', async t => {
   const res = await holiday({year: 2099}).catch(err => err)
 
   t.is(res, 'There are no holidays for this year')
+})
+
+test('should return holidays for entire year', async t => {
+  const res = await holiday().then(res => res)
+
+  t.true(res['1']['1'].title === 'New Years Day')
 })
