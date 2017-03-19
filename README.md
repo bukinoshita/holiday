@@ -30,13 +30,19 @@ Optional
 
 If `options` is not passed, returns US holidays for the entire year
 
+#### year
+Type: `string` or `integer`<br/>
+Default: current year
+
+2017 is the only year supported by now
+
 ##### month
-Type: `string`<br/>
+Type: `string` or `integer`<br/>
 
 Must be a number between 1-12
 
 ##### day
-Type: `string`<br/>
+Type: `string` or `integer`<br/>
 
 Must be a number between 1-31
 
