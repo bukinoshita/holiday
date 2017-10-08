@@ -1,72 +1,40 @@
 {
-  "1": {
-    "1": {
-      "title": "New Years Day"
-    },
-    "2": {
-      "title": "New Years Day Holiday"
-    },
-    "16": {
-      "title": "Martin Luther King Day"
-    }
+  "january": {
+    "1": "New Years Day",
+    "2": "New Years Day Holiday",
+    "16": "Martin Luther King Day"
   },
-  "2": {
-    "20": {
-      "title": "Presidents' Day"
-    }
+  "february": {
+    "20": "Presidents' Day"
   },
-  "3": {
-    "17": {
-      "title": "St. Patrick's Day"
-    }
+  "march": {
+    "17": "St. Patrick's Day"
   },
-  "4": {
-    "17": {
-      "title": "Emancipation Day"
-    }
+  "april": {
+    "17": "Emancipation Day"
   },
-  "5": {
-    "14": {
-      "title": "Mother's Day"
-    },
-    "29": {
-      "title": "Memorial Day"
-    }
+  "may": {
+    "14": "Mother's Day",
+    "29": "Memorial Day"
   },
-  "6": {
-    "18": {
-      "title": "Father's Day"
-    }
+  "june": {
+    "18": "Father's Day"
   },
-  "7": {
-    "4": {
-      "title": "Independence Day"
-    }
+  "july": {
+    "4": "Independence Day"
   },
-  "9": {
-    "4": {
-      "title": "Labor Day"
-    }
+  "september": {
+    "4": "Labor Day"
   },
-  "10": {
-    "9": {
-      "title": "Columbus Day"
-    }
+  "october": {
+    "9": "Columbus Day"
   },
-  "11": {
-    "10": {
-      "title": "Veterans Day"
-    },
-    "23": {
-      "title": "Thanksgiving Day"
-    },
-    "24": {
-      "title": "Day after Thanksgiving"
-    }
+  "november": {
+    "10": "Veterans Day",
+    "23": "Thanksgiving Day",
+    "24": "Day after Thanksgiving"
   },
-  "12": {
-    "25": {
-      "title": "Christmas Day"
-    }
+  "december": {
+    "25": "Christmas Day"
   }
 }

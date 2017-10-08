@@ -1,38 +1,27 @@
 'use strict'
 
-const holidays = require('./holidays/')
+const spacetime = require('spacetime')
 
-const holiday = (opts = {}) => {
-  const date = new Date()
-  const {year = date.getFullYear(), month, day, country = 'us'} = opts
+const holidays = require('./holidays')
 
-  return new Promise((resolve, reject) => {
-    if (!holidays[year]) {
-      reject('There are no holidays for this year')
-    }
+module.exports = ({ country = 'us', range = 'day' } = {}) => {
+  const today = spacetime.today()
+  const s = new spacetime(today)
+  const year = s.year()
+  const month = s.monthName()
+  const date = s.date()
 
-    if (month > 12 || day > 31) {
-      reject('Invalid date')
-    }
+  return new Promise(resolve => {
+    country = country === 'br' ? country : 'us'
 
-    if (!month && !day) {
+    if (range === 'year') {
       resolve(holidays[year][country])
     }
 
-    if (month && day) {
-      if (holidays[year][country][month]) {
-        resolve(holidays[year][country][month][day])
-      }
-
-      reject(false)
-    } else if (month) {
-      if (holidays[year][country][month]) {
-        resolve(holidays[year][country][month])
-      }
-
-      reject(false)
+    if (range === 'month') {
+      resolve(holidays[year][country][month])
     }
+
+    resolve(holidays[year][country][month][date])
   })
 }
-
-module.exports = holiday
