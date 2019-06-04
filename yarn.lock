@@ -3428,9 +3428,9 @@ source-map@^0.6.0:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
-spacetime@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/spacetime/-/spacetime-1.3.3.tgz#a8555bb16aea9725a77d05c592500434226b773f"
+spacetime@^5.0.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/spacetime/-/spacetime-5.9.0.tgz#fcf81055d7e3b19fabe254921f8e6b05b2f854dd"
 
 spdx-correct@~1.0.0:
   version "1.0.2"
