@@ -21,7 +21,7 @@
     "holidays"
   ],
   "dependencies": {
-    "spacetime": "^5.0.0"
+    "spacetime": "^6.0.0"
   },
   "devDependencies": {
     "ava": "2.3.0",
